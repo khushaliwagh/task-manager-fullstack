@@ -1,4 +1,4 @@
-
+import API_BASE_URL from '../api';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ function AddTask() {
     setSaving(true);
 
     try {
-      const response = await fetch('http://localhost:8081/api/tasks', {
+      const response = await fetch(`${API_BASE_URL}/api/tasks`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

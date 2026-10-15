@@ -1,4 +1,4 @@
-
+import API_BASE_URL from '../api';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ function EditTask() {
     async function fetchTask() {
       try {
         const response = await fetch(
-          `http://localhost:8081/api/tasks/${id}`,
+         `${API_BASE_URL}/api/tasks/${id}`,
           { signal: controller.signal }
         );
 
@@ -55,7 +55,7 @@ function EditTask() {
 
     try {
       const response = await fetch(
-        `http://localhost:8081/api/tasks/${id}`,
+        `${API_BASE_URL}/api/tasks/${id}`,
         {
           method: 'PUT',
           headers: {

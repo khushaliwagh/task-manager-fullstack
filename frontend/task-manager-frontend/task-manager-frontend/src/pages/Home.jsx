@@ -1,4 +1,4 @@
-
+import API_BASE_URL from '../api';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ function Home() {
     async function fetchTasks() {
       try {
         const response = await fetch(
-          'http://localhost:8081/api/tasks',
+          `${API_BASE_URL}/api/tasks`,
           { signal: controller.signal }
         );
 
