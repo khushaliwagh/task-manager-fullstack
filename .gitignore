@@ -1,0 +1,21 @@
+# Frontend dependencies and build files
+frontend/task-manager-frontend/task-manager-frontend/node_modules/
+frontend/task-manager-frontend/task-manager-frontend/dist/
+frontend/task-manager-frontend/task-manager-frontend/.env
+frontend/task-manager-frontend/task-manager-frontend/.env.*
+
+# Backend build files
+backend/task-manager-backend/taskmanager/target/
+
+# Private database configuration
+backend/task-manager-backend/taskmanager/src/main/resources/application.properties
+backend/task-manager-backend/taskmanager/src/main/resources/application-local.properties
+
+# Secrets and logs
+.env
+.env.*
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
