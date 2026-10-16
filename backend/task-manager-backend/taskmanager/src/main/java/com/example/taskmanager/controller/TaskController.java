@@ -20,7 +20,7 @@ import com.example.taskmanager.service.TaskService;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "https://task-manager-fullstack-1-800k.onrender.com"})
 public class TaskController {
 
     private final TaskService taskService;
